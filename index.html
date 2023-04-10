@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+          rel="stylesheet">
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./index.js" defer></script>
+
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Icons -->
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png">
+</head>
+<body>
+<main>
+    <!-- Header -->
+    <header id="heroHeader" class="hero-header">
+        <nav id="navBar" class="nav">
+            <div class="container">
+                <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
+                    <span class="nav__hamburger-top"></span>
+                    <span class="nav__hamburger-center"></span>
+                    <span class="nav__hamburger-bottom"></span>
+                </button>
+                <ul id="navList" class="nav__list">
+                    <li class="nav__list-item">
+                        <a class="nav__list-link active" href="#heroHeader">Home</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#services">Work Experience</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#works">Project Experience</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#contact"> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="header__container container">
+            <div class="header__left">
+                <span class="header__sup-text">Hi There! I am a  </span>
+                <h1 class="header__title">
+                    <span class="header__title-1" data-role="Software">Software</span>
+                    <span class="header__title-2" data-role="Engineer">Engineer</span>
+                </h1>
+                <p class="header__msg"> First solve the problem, then write the code.<br> - D'Artagnan Calitz </p>
+                <a href="https://drive.google.com/drive/folders/1Xrxvp7zR6wZ78FSNgkwCuIbX5GPUDm2l?usp=sharing" class="header__resume">Resume</a>
+            </div>
+<!--            <span class="header__bg">
+            <video src="./assets/videos/gradient.mp4" autoplay loop muted>
+                Your browser does not support the video tag.
+            </video>
+        </span>
+-->
+        </section>
+    </header>
+
+
+
+    <!-- Work Experience -->
+    <section id="services" class="section container">
+        <h2 class="section__title">Work Experience</h2>
+
+        <div class="service-cards">
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <img src="./assets/services/support.svg" alt="Support Illustration"/>
+                </span>
+                <h3 class="service-card__title">Calbaptist Racing</h3>
+                <p class="service-card__msg"> As Electronics Junior Lead, I design, manufacture, and test the electronic system for a Formula 1-style car, including prototyping, production, design presentations, and harness manufacturing.</p>
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <img src="./assets/services/design.svg" alt="Design Illustration"/>
+                </span>
+                <h3 class="service-card__title">ITS Lead Technician</h3>
+                <p class="service-card__msg">As the ITS Technician Lead at a university, I oversee staff, manage projects across departments, interface with clients, consult with directors, collaborate with teams, and establish processes in our issue tracking system.</p>
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <img src="./assets/services/developing.svg" alt="Deploy Illustration"/>
+                </span>
+                <h3 class="service-card__title">ITS Analyst</h3>
+                <p class="service-card__msg"> Oversaw IT functions at California Baptist University, including server/network maintenance, software/platform configuration, and collaboration with other IT sub-departments for a campus of 12,000+ students and 600+ staff/faculty.</p>
+                <span class="service-card__bg"></span>
+            </article>
+        </div>
+    </section>
+
+    <!-- Project Experiences -->
+    <section id="works" class="section container">
+        <h2 class="section__title">Project Experience</h2>
+        <div class="works">
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="./assets/works/sample.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Password Generator</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">C++</span>
+                    <span class="work__badge">C#</span>
+                    <span class="work__badge">Windows Forms</span>
+                </span>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="./assets/works/sample.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Student Tracking Attendance</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">PHP</span>
+                    <span class="work__badge">Python</span>
+                    <span class="work__badge">SQL</span>
+                </span>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="./assets/works/sample.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Electronic Clutch</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">C++</span>
+                    <span class="work__badge">Arduino </span>
+                    <span class="work__badge">PCB Design</span>
+                </span>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="./assets/works/sample.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Launch Control</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">C++</span>
+                    <span class="work__badge">AEM Infinity</span>
+                    <span class="work__badge">Arduino</span>
+                </span>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="./assets/works/sample.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Cal-baptist Racing Website Re-design </h3>
+                    <span class="work__badges">
+                    <span class="work__badge">HTML5</span>
+                    <span class="work__badge">CSS3</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="./assets/works/sample.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Octo-Print Integration</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">C++</span>
+                    <span class="work__badge">G-Code</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+        <h2 class="section__title">Let's Connect!</h2>
+        <div class="contact">
+            <form class="contact__form">
+                <div class="contact__field-wrapper">
+                    <label for="contactNameTxt">Name:</label>
+                    <input id="contactNameTxt" type="text" placeholder="What's your name?"/>
+                </div>
+                <div class="contact__field-wrapper">
+                    <label for="contactDescriptionTxt">Message:</label>
+                    <textarea id="contactDescriptionTxt" placeholder="Lets connect!"></textarea>
+                </div>
+
+                <button type="submit" class="contact__submit-btn">Submit</button>
+            </form>
+            <span class="contact__illustration">
+                <video src="./assets/videos/retrovid.mp4" autoplay loop muted>
+                Your browser does not support the video tag.
+            </video>
+            </span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+    </footer>
+</main>
+</body>
+</html>
